@@ -14,7 +14,8 @@ public class Tester {
 		
 		tree.prePrint(tree.root);
 		
+		tree.remove(tree.root, 50);
 		System.out.println();
-		tree.postPrint(tree.root);
+		tree.prePrint(tree.root);
 	}
 }

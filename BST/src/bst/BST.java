@@ -20,6 +20,35 @@ public class BST {
 		return node;
 	}
 	
+	public Node remove(Node node, int val){
+		if(node == null){
+			return node;
+		}
+		
+		if(val > node.e)
+			node.right = remove(node.right, val);
+		else if(val < node.e)
+			node.left = remove(node.left, val);
+		else if(node.right == null)
+			node = node.left;
+		else if(node.left == null)
+			node = node.right;
+		else{
+			node.e = findMin(node.right).e;
+			node.right = remove(node.right, node.e);
+		}
+		
+		
+		return node;
+	}
+	
+	public Node findMin(Node node){
+		if(node.left == null || node == null)
+			return node;
+		else
+			return findMin(node.left);
+	}
+	
 	public void prePrint(Node node){
 		if(node == null)
 			return;
