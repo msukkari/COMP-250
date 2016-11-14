@@ -1,6 +1,6 @@
 /*
 *	Give a recursive algorithm SumDepths(...) for computing the sum
-*	of he depths of all nodes in a rooted tree.
+*	of the depths of all nodes in a rooted tree.
 */
 
 
