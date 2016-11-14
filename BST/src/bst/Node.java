@@ -12,9 +12,4 @@ public class Node {
 		e = element;
 	}
 	
-	public void testFunc(){
-		for(Node child : this.children){
-			// test
-		}
-	}
 }
